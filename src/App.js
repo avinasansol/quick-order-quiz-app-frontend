@@ -99,7 +99,7 @@ function App() {
                 ) : (
                   <div className="quiz-container">
                     <div className="quiz-box">
-                      <h1>Fastest Finger First:</h1>
+                      <h1>Fastest Finger First</h1>
                       <Question />
                     </div>
                     <div className="user-list-box">
