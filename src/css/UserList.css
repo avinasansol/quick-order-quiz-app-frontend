@@ -1,0 +1,48 @@
+.user-list-grid {
+    display: grid;
+    grid-template-columns: 50px 1fr 100px; /* Three columns: rank (fixed), name (flexible), and points (fixed) */
+    gap: 10px 0;
+}
+
+.user-list-header {
+    display: contents; /* Aligns the header with the grid structure */
+    font-weight: bold;
+    color: #007bff;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.user-list-row {
+    display: contents; /* Aligns rows with the grid structure */
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.3s ease;
+}
+
+.user-list-row.highlighted .user-rank,
+.user-list-row.highlighted .user-name,
+.user-list-row.highlighted .user-points {
+    font-weight: bold;
+    background-color: #e0f7fa;
+}
+
+.user-list-row:hover .user-rank,
+.user-list-row:hover .user-name,
+.user-list-row:hover .user-points {
+    background-color: #f0f0f0; /* Hover effect for entire row */
+}
+
+.user-rank {
+    text-align: left;
+    color: #555;
+}
+
+.user-name {
+    text-align: left;
+    min-width: 150px; 
+}
+
+.user-points {
+    text-align: left;
+    color: #555;
+}

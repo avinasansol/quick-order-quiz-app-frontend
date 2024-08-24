@@ -1,0 +1,56 @@
+/* Center the appstat form on the page */
+.appstat-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+/* Style the appstat form */
+.appstat-form {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    padding: 20px;
+    padding-bottom: 45px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* Limit the width of the form */
+    box-sizing: border-box;
+    text-align: center; /* Center the text and button within the form */
+}
+
+/* Style the h2 element */
+.appstat-form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333; /* Darker text color */
+}
+
+/* General button styling */
+.appstat-form button {
+    color: white; /* White text */
+    padding: 12px 20px; /* Padding around the button */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Increase font size */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+    width: 100%; /* Make the button take the full width */
+    max-width: 200px; /* Limit the width of the button */
+    margin: 0 auto; /* Center the button horizontally */
+}
+
+/* Activate button (blue) */
+.appstat-form .activate-button {
+    background-color: #007BFF; /* Blue background */
+}
+
+/* De-Activate button (red) */
+.appstat-form .deactivate-button {
+    background-color: #DC3545; /* Red background */
+}
+
+/* Button hover effect */
+.appstat-form button:hover {
+    opacity: 0.9; /* Slight opacity change on hover */
+}

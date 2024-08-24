@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Jura:wght@500;600;900&display=swap");
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Jura", sans-serif;
+  font-size: 100%;
+  min-height: 100%;
+  line-height: 1.5;
+  background-image: url(../public/home-background-1.jpeg);
+  background-size: cover; /* Ensure the image covers the entire viewport */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-attachment: fixed; /* Ensure the background image stays fixed during scroll */
+  padding-top: 150px; 
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
