@@ -55,7 +55,10 @@
   max-width: 100%; /* Ensure boxes don't overflow */
 }
 
-.quiz-box h1,
+.quiz-box h1 {
+    font-size: 26px;
+    text-align: center;
+}
 .quiz-box h2,
 .user-list-box h2 {
     font-size: 24px;
