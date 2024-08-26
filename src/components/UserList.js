@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { request } from '../api'; // Import the request function
 import '../css/UserList.css';
+import spinner from '../public/spinner.gif';
 
 // Helper function to capitalize each word
 const capitalizeWords = (str) => {
@@ -65,7 +66,7 @@ const UserList = ({ username }) => {
             {loading ? (
                 <div>
                     <div className="user-list-load">
-                        <p>Loading Users...</p>
+                        <p><img src={spinner} alt="Loading User List..." /></p>
                     </div>
                 </div>
             ) : (
