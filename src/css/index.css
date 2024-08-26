@@ -14,7 +14,7 @@ body {
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Prevent the image from repeating */
   background-attachment: fixed; /* Ensure the background image stays fixed during scroll */
-  padding-top: 100px; 
+  padding-top: 80px; 
 }
 
 code {
