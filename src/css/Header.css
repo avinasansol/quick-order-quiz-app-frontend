@@ -1,5 +1,5 @@
 .header {
-  position: fixed;
+  position: sticky; /* Make the header sticky */
   top: 0;
   left: 0;
   right: 0;
@@ -8,6 +8,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
+  transition: padding 0.3s ease; /* Transition for smooth shrinking */
 }
 
 .header.logged-in {
@@ -22,9 +23,18 @@
   border-bottom: none;
 }
 
+.header.shrink {
+  padding: 5px 20px; /* Reduced padding on scroll */
+}
+
 .logo img {
-  height: 100px; /* Set the minimum height for the logo */
+  height: 100px; /* Default height for the logo */
   width: auto; /* Maintain aspect ratio */
+  transition: height 0.3s ease; /* Smooth transition for logo shrinking */
+}
+
+.header.shrink .logo img {
+  height: 50px; /* Reduced height for the logo on scroll */
 }
 
 .auth-links {
@@ -51,6 +61,7 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
 
 .logout-button:hover {
