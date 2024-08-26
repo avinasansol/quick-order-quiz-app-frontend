@@ -138,7 +138,7 @@ const ActiveQuestions = ({ minTimeLeftForActiveQues }) => {
                             <div className="progress-container">
                                 <div 
                                     className="progress-bar" 
-                                    style={{ width: `${(item.timeLeft / 90) * 60}%` }}
+                                    style={{ width: `${(item.timeLeft / 90) * 50}%` }}
                                 ></div>
                                 <span className="time-left">{item.timeLeft} seconds Left</span>
                             </div><br />
