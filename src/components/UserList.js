@@ -66,7 +66,7 @@ const UserList = ({ username }) => {
             {loading ? (
                 <div>
                     <div className="user-list-load">
-                        <p><img src={spinner} alt="Loading User List..." /></p>
+                        <img src={spinner} alt="Loading User List..." />
                     </div>
                 </div>
             ) : (

@@ -5,6 +5,7 @@
     color: #007bff;
     border-bottom: 2px solid #ddd;
     padding-bottom: 10px;
+    text-align: center;
 }
 .user-list-grid {
     display: grid;
