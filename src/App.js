@@ -76,7 +76,7 @@ function App() {
     <Router>
       <div> {/* Add padding to prevent content from overlapping with footer */}
         <Header isLoggedIn={isLoggedIn} username={username} onLogout={handleLogout} />
-        <div style={{ padding: '20px' }}>
+        <div>
           {isAdmin && (<AppStatus />)}
           <Routes>
             <Route 
