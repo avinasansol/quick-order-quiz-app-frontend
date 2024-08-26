@@ -1,34 +1,17 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import '../css/Header.css';
 import logo from '../public/logo.png';
 
 const Header = ({ isLoggedIn, username, onLogout }) => {
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  const handleScroll = () => {
-    const offset = window.scrollY;
-    if (offset > 50) {
-      setIsScrolled(true);
-    } else {
-      setIsScrolled(false);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
 
   const handleLogout = () => {
-    localStorage.removeItem('accessToken');
-    onLogout();
+    localStorage.removeItem('accessToken'); // Remove token from local storage
+    onLogout(); // Call the logout function passed as a prop
   };
 
   return (
-    <header className={`header ${isScrolled ? 'shrink' : ''} ${isLoggedIn ? 'logged-in' : 'logged-out'}`}>
+    <header className={`header ${isLoggedIn ? 'logged-in' : 'logged-out'}`}>
       <div className="logo">
         <img src={logo} alt="Logo" />
       </div>
