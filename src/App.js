@@ -76,7 +76,7 @@ function App() {
     <Router>
       <div>
         <Header isLoggedIn={isLoggedIn} username={username} onLogout={handleLogout} />
-        <div style={{ marginTop: '-20px' }}>
+        <div>
           {isAdmin && (<AppStatus />)}
           <Routes>
             <Route 

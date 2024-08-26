@@ -63,7 +63,11 @@ const UserList = ({ username }) => {
     return (
         <>
             {loading ? (
-                <p>Loading Users...</p> // Show loading message while data is being fetched
+                <div>
+                    <div className="user-list-load">
+                        <p>Loading Users...</p>
+                    </div>
+                </div>
             ) : (
                 data && data.length > 0 ? (
                     <div>

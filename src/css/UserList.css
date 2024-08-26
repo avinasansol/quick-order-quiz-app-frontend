@@ -1,3 +1,11 @@
+.user-list-load {
+    max-width: 100%;
+    box-sizing: border-box; 
+    font-weight: bold;
+    color: #007bff;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
 .user-list-grid {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr; /* Three columns: rank (fixed), name (flexible), and points (fixed) */
