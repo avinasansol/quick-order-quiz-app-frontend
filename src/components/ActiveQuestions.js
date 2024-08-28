@@ -145,6 +145,11 @@ const ActiveQuestions = ({ minTimeLeftForActiveQues }) => {
                             <p>{item.ques}</p>
                             {item.answerDto ? (
                                 <div>
+                                {options.map((opt, optIndex) => (
+                                    <div key={optIndex}>
+                                        <p>{opt.label}) {opt.value}</p>
+                                    </div>
+                                ))}
 	                            <h3>Your Answer:</h3>
                                     <p>
                                         1: {item.answerDto.ans1 || 'No Data'}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
