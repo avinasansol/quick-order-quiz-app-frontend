@@ -58,7 +58,7 @@ const PendingQuestions = ({updateMinTimeLeft}) => {
         <div>
             {pendingQuestions.length > 0 && (
                 <div>
-                    <h2>Pending Question:</h2>
+                    <h2>Next Question:</h2>
                     <ul className="question-list">
                         {pendingQuestions.map((item, index) => (
                             <li key={index} className="question-box">
