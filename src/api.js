@@ -6,7 +6,7 @@ export const getAuthToken = () => {
 };
 
 // Set Axios defaults
-axios.defaults.baseURL = 'https://quick-order-quiz.onrender.com';
+axios.defaults.baseURL = 'https://quiz-ngtv.onrender.com';
 axios.defaults.headers.post['Content-Type'] = 'application/json';
 
 // Centralized request function
