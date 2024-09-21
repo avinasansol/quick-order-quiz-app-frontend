@@ -134,7 +134,7 @@ const ActiveQuestions = ({ minTimeLeftForActiveQues }) => {
 
                     return (
                         <div className="question-box" key={index}>
-                            <h3>Question:</h3>
+                            <h3>Timer:</h3>
                             <div className="progress-container">
                                 <div 
                                     className="progress-bar" 
@@ -142,6 +142,7 @@ const ActiveQuestions = ({ minTimeLeftForActiveQues }) => {
                                 ></div>
                                 <span className="time-left">{item.timeLeft} seconds Left</span>
                             </div><br />
+		            <h3>Question:</h3>
                             <p>{item.ques}</p>
                             {item.answerDto ? (
                                 <div>
