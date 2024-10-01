@@ -30,7 +30,7 @@ const CompletedQuestions = () => {
                 <ul className="question-list">
                     {completedQuestions.map((item, index) => (
                         <li key={index} className="question-box">
-                            <h3>Question:</h3>
+                            <h3>Question #{index}:</h3>
                             <p>{item.ques}</p>
                             <p>A) {item.optA}</p>
                             <p>B) {item.optB}</p>
