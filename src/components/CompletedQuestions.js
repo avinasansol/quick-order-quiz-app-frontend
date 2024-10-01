@@ -16,7 +16,7 @@ const CompletedQuestions = () => {
 
         fetchCompletedQuestions();
 
-        const completedInterval = setInterval(fetchCompletedQuestions, 20000); // Refresh every 20 seconds
+        const completedInterval = setInterval(fetchCompletedQuestions, 5000); // Refresh every 20 seconds
 
         return () => {
             clearInterval(completedInterval);
