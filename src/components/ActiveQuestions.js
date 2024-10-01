@@ -122,7 +122,7 @@ const ActiveQuestions = ({ minTimeLeftForActiveQues }) => {
 
     return (
         <div>
-            <h2>Active Question:</h2>
+            <h2></h2>
             {activeQuestions.length > 0 ? (
                 activeQuestions.map((item, index) => {
                     const options = [
