@@ -26,7 +26,7 @@ const PendingQuestions = ({updateMinTimeLeft}) => {
             if (shouldFetchPending) {
                 fetchPendingQuestions();
             }
-        }, 10000); // Refresh every 10 seconds if needed
+        }, 5000); // Refresh every 5 seconds if needed
 
         const updateTime = () => {
             setPendingQuestions(prevQuestions => {
